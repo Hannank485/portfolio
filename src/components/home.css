@@ -1,0 +1,139 @@
+body {
+  overflow: hidden;
+}
+.home-container {
+  height: 874px;
+  position: relative;
+}
+.background {
+  z-index: -1;
+  height: 874px;
+  background-image: url("../public/programming-code-colorful.jpg");
+  opacity: 5%;
+}
+.social-media {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background-color: var(--alt-bg);
+  padding-bottom: 40px;
+}
+
+.social-media-content {
+  transform: rotate(-90deg);
+  position: absolute;
+  right: -65px;
+  bottom: 120px;
+}
+.social {
+  font-size: 30px;
+  transform: rotate(90deg);
+  margin-right: 20px;
+  transition: color 0.4s;
+}
+
+.social-media-content a {
+  color: #f22952;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.social:hover {
+  color: hsl(348, 89%, 70%);
+}
+
+.home-hero {
+  position: absolute;
+  top: 0;
+  left: 150px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 30px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+#txt-red {
+  color: var(--main-color);
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.hero-main {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+.hero-main2 {
+  font-size: 45px;
+}
+.color-change {
+  color: var(--main-color);
+}
+.hero-info {
+  font-size: 15px;
+  margin-top: 10px;
+}
+img {
+  width: 750px;
+  height: 750px;
+}
+.box {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--main-color);
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.box-js {
+  right: 350px;
+  top: 205px;
+  animation: fadeInJs 3s ease-in-out;
+}
+.box-html {
+  right: 710px;
+  top: 250px;
+  animation: fadeInHtml 2.5s ease-in-out;
+}
+
+.box-react {
+  animation: fadeInReact 3.5s ease-in-out;
+
+  right: 320px;
+  top: 420px;
+}
+
+@keyframes fadeInHtml {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes fadeInJs {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}
+@keyframes fadeInReact {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) scale(1);
+  }
+}

@@ -1,0 +1,78 @@
+.navbar {
+  position: sticky;
+}
+
+.project-wrapper {
+  width: 1200px;
+  height: 800px;
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 30px;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-auto-rows: 400px;
+  min-width: 0;
+  min-height: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.3s ease-in-out;
+  color: #e6e6fa;
+  padding: 20px;
+  position: relative;
+}
+.card img {
+  width: 120px;
+  height: 120px;
+}
+
+.card:hover {
+  transform: translateY(-15px);
+}
+.weather {
+  border-radius: 30px;
+  margin: 20px;
+  background-color: hsl(248, 39%, 39%);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.number-guess {
+  border-radius: 30px;
+  margin: 20px;
+  background-color: hsl(180, 100%, 30%);
+  animation: fadeIn 1.3s ease-in-out;
+}
+.calculator {
+  border-radius: 30px;
+  background-color: hsl(283, 96%, 32%);
+  margin: 20px;
+  animation: fadeIn 1.6s ease-in-out;
+}
+
+.task-list {
+  margin: 20px;
+  border-radius: 30px;
+  background-color: #4682b4;
+  animation: fadeIn 1.9s ease-in-out;
+}
+
+.pokeapi {
+  border-radius: 30px;
+  margin: 20px;
+  background-color: hsl(275, 100%, 35%);
+  animation: fadeIn 2.2s ease-in-out;
+}
+
+.money-exchange {
+  border-radius: 30px;
+  background-color: hsl(240, 64%, 37%);
+  margin: 20px;
+  animation: fadeIn 2.2s ease-in-out;
+}
