@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
     <>
       <div className="navbar">
-        <Link to="/" id="logo">
+        <Link to="/portfolio/" id="logo">
           <FontAwesomeIcon icon={faStrikethrough} />
         </Link>
         <div>
-          <NavLink to="/" className="navbar-contents">
+          <NavLink to="/portfolio/" className="navbar-contents">
             Home
           </NavLink>
           <NavLink to="/about" className="navbar-contents">

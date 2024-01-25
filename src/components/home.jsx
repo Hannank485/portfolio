@@ -7,6 +7,7 @@ import {
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import "./home.css";
+import home from "../images/pngegg.png";
 const Home = () => {
   return (
     <>
@@ -63,7 +64,7 @@ const Home = () => {
               </p>
             </div>
             <div className="home-img">
-              <img src="/pngegg.png" alt="" />
+              <img src={home} alt="" />
             </div>
           </div>
         </div>

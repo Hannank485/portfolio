@@ -1,5 +1,6 @@
 import Navbar from "./navbar";
 import "./about.css";
+import about from "../images/about.png";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <Navbar />
       <div className="circle1"></div>
       <div className="about-wrapper">
-        <img src="../public/about.png" alt="" />
+        <img src={about} alt="" />
         <div className="about-info">
           <h1>About Me</h1>
           <p className="info-loc">
@@ -31,7 +32,7 @@ const About = () => {
             <p>&gt; ReactJS (Vite)</p>
           </div>
         </div>
-      </div>  
+      </div>
     </>
   );
 };

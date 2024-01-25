@@ -3,6 +3,7 @@ import "./contact.css";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
+import contact from "../images/contact.png";
 const Contact = () => {
   var [email, updateEmail] = useState();
   var [message, updateMessage] = useState();
@@ -49,7 +50,7 @@ const Contact = () => {
             <button onClick={handleClick}>Send Message</button>
           </form>
         </div>
-        <img src="./contact.png" alt="" id="contact-img" />
+        <img src={contact} alt="" id="contact-img" />
       </div>
     </>
   );
